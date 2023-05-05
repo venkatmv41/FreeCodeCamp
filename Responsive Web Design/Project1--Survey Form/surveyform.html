@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tour package registration form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="head">
+          <h1 id ="title">Travel Package Registration Form</h1>
+          <p id= "description">To Travel with us on a memorable and adventurous journey, fill this form and get registered.</p>
+        </div>
+        <div class="details">
+          <form id ="survey-form">
+            <fieldset class="box">
+              <label id="name-label" for="name">Enter your name:     <input type="text" id="name" name="flname" placeholder="full name" required /></label>
+              </label>
+                <label id="email-label"for="email">Enter your Email: <input type="email" id="email" name="email" placeholder="valid email" required/></label>
+                <label id="number-label" for="number">Enter your age: <input type="number" id="number" name="num" placeholder="your present age" min = 10 max= 70 required/></label>
+            </fieldset>
+            <div class="dropdown">
+              <label>Select your destination package: 
+                <select id="dropdown">
+                  <option name="package" value="">(select one)</option>
+                  <option name="package" value="pondicherry">Pondicherry</option>
+                  <option name="package" vlaue="goa">Goa</option>
+                  <option name="package" value="Kerala">Kerala</option>
+                  <option name="package" value="Thailand">Thailand</option>
+                </select>
+              </label>
+            </div>
+            <div class="radio">
+              <p class="radio-label">Number of persons</p>
+              <label for="one"><input type="radio" id="one"name="personcount" value="1" checked>1
+              <input type="radio" id="two"name="personcount" value="2">2
+              <input type="radio" id="three"name="personcount" value="3">3
+              <input type="radio" id="four"name="personcount" value="4">4
+              </label>             
+            </div>
+           <div class="check">
+              <legend>Choose any premium packs for comfort journey</legend>
+              <label for="food"><input type="checkbox" name="packs-selected" value="food-yes"id="food" checked> Food included</label>
+              <label for="AC"><input type="checkbox" name="packs-selected" value="AC"id="AC" > A.C Stay</label>
+              <label for="hotel"><input type="checkbox" name="packs-selected" value="premium-hotel"id="hotel" > Premium Hotel</label>
+              <label for="event"><input type="checkbox" name="packs-selected" value="event-yes"id="event" >  Special events</label>
+            </div>
+            <div class="multi-line">
+              <label for="multi">Write down if you have any specific requests: 
+                <textarea id="multi" placeholder="write here"></textarea>
+              </label>
+            </div>
+            <input type="submit" value="submit"id="submit">
+          </form>
+        </div>
+    </div>
+  </body>
+</html>
